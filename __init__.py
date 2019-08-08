@@ -42,7 +42,7 @@ def register():
 
 
 def unregister():
-    bpy.types.TOPBAR_HT_upper_bar.pop(draw_button)
+    bpy.types.TOPBAR_HT_upper_bar.remove(draw_button)
 
 
 if __name__ == "__main__":

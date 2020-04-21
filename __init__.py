@@ -21,11 +21,12 @@ import bpy
 bl_info = {
     "name": "Save Preferences from TopBar",
     "description": "Save Preferences button for TopBar",
-    "author": "kromar",
-    "version": (1, 0, 0),
-    "blender": (2, 80, 0),
+    "author": "Daniel Grauer",
+    "version": (1, 0, 2),
+    "blender": (2, 82, 0),
     "location": "TopBar",
-    "category": "System"
+    "category": "System",
+    "wiki_url": "https://github.com/kromar/blender_save_preferences_button"
 }
 
 

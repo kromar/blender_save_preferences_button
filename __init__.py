@@ -33,7 +33,7 @@ def draw_button(self, context):
     if context.region.alignment == 'RIGHT':
         layout = self.layout
         row = layout.row(align=True)
-        row.operator(operator="wm.save_userpref", text="Save Prefs", icon='MOD_HUE_SATURATION', emboss=True)
+        row.operator(operator="wm.save_userpref", text="", icon='FILE_TICK', emboss=True)
         row.operator(operator="screen.userpref_show", text="", icon='PREFERENCES', emboss=True)
 
 

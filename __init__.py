@@ -35,8 +35,8 @@ def draw_button(self, context):
         layout = self.layout
         row = layout.row(align=True)
         row.operator(operator="screen.userpref_show", text="", icon='PREFERENCES', emboss=True)
-        row = layout.row(align=True)
         row.operator(operator="wm.save_userpref", text="", icon='IMPORT', emboss=True)
+        row = layout.row(align=True)
         row.operator(operator="wm.save_homefile", text="", icon='FILE_BACKUP', emboss=True)
         row = layout.row(align=True)
         row.operator(operator="script.reload", text="", icon='FILE_SCRIPT', emboss=True)

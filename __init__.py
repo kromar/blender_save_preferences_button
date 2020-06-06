@@ -22,7 +22,7 @@ bl_info = {
     "name": "Save Preferences from TopBar",
     "description": "Save Preferences button for TopBar",
     "author": "Daniel Grauer",
-    "version": (1, 0, 3),
+    "version": (1, 0, 4),
     "blender": (2, 82, 0),
     "location": "TopBar",
     "category": "System",
@@ -34,10 +34,14 @@ def draw_button(self, context):
     if context.region.alignment == 'RIGHT':
         layout = self.layout
         row = layout.row(align=True)
-        row.operator(operator="wm.save_homefile", text="", icon='FILE_BACKUP', emboss=True)
+        row.operator(operator="screen.userpref_show", text="", icon='PREFERENCES', emboss=True)
         row = layout.row(align=True)
         row.operator(operator="wm.save_userpref", text="", icon='IMPORT', emboss=True)
-        row.operator(operator="screen.userpref_show", text="", icon='PREFERENCES', emboss=True)
+        row.operator(operator="wm.save_homefile", text="", icon='FILE_BACKUP', emboss=True)
+        row = layout.row(align=True)
+        row.operator(operator="script.reload", text="", icon='FILE_SCRIPT', emboss=True)
+
+        #bpy.ops.script.reload()
 
 
 def register():
